@@ -16,3 +16,21 @@ class Solution {
         return true;
     }
 }
+
+
+class Solution2 {
+    public boolean canConstruct(String ransomNote, String magazine) {
+       if(ransomNote.length()>magazine.length()){
+           return false;
+       }
+       int[] ascii = new int[26];
+       for(char c : ransomNote.toCharArray()){
+           int index = magazine.indexOf(c,ascii[c - 'a']);
+           if(index == -1){
+               return false;
+           }
+           ascii[c - 'a'] = index + 1;
+       }
+       return true;
+   }
+}
