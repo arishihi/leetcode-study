@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class 最常回文 {   
     public int getLongestPalindrome (String A) {
         int max = 1;

@@ -1,5 +1,5 @@
 
-class Solution {
+class Solution1 {
     public ListNode middleNode(ListNode head) {
         ListNode p = head;
         int i = 0;

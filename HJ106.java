@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 
 public class HJ106 {
     public static void main(String[] args) {
